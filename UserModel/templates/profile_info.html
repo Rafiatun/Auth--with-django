@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <td scope="col">First_Name</td>
+        <td scope="col">Last_Name</td>
+        <td scope="col">Institution</td>
+      </tr>
+    </thead>
+    {% for info in userinfo %}
+    <tbody>
+      <tr>
+        <th scope="row"></th>
+        <td>{{ info.First_Name }}</td>
+        <td>{{ info.Last_Name }}</td>
+        <td>{{ info.Institution }}</td>
+      </tr>
+    </tbody>
+    {% endfor %}
+  </table>
+
+
+
+
+
+{% endblock %}

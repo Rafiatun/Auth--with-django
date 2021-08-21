@@ -1,0 +1,49 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<br>
+<br>
+
+<br>
+<br>
+<h2 style="text-align: center;">Authentication system</h2>
+<hr>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<div class="container-fluid">
+
+  <div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      
+      <a href="{% url 'register_view' %}"  type="button" class="btn btn-dark btn-circle btn-xl">Register</a>
+  
+    </div>
+    <div class="col-md-3">
+      
+      <a href="{% url 'login_view' %}" type="button" class="btn btn-dark btn-circle btn-xl">Login </a>
+    
+    </div>
+    <div class="col-md-3">
+   
+      <a href="{% url 'pro_info' %}" type="button" class="btn btn-dark btn-circle btn-xl"> Registered Users</a>
+    
+    </div>
+    <div class="col-md-3">
+      
+      <a href="{% url 'logout_view' %}" type="button" class="btn btn-dark btn-circle btn-xl">Log out</a>
+  
+    </div>
+  </div>
+</div>
+</div>
+
+
+{% endblock %}
